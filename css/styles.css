@@ -24,6 +24,11 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+ul{
+    padding-left: 0px;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -32,15 +37,20 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
 }
 
+.section-padding {
+}
+
 /* HEADER */
 header {
     border-bottom: 1px;
     border-color: rgba(236, 236, 236, 1);
-    display: flex;
 }
 
 .container{
-    width: 1170px;
+    width: 1200px;
+    padding: 94px 15px;
+    display: flex;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -63,6 +73,9 @@ header {
 
 .pages{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 294px;
 }
 
 .header-link{
@@ -100,6 +113,8 @@ header {
 
 .contacts-header{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* END OF HEADER */
@@ -107,6 +122,8 @@ header {
 .first-part{
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .businessh1{
@@ -116,6 +133,9 @@ header {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .button{
@@ -132,6 +152,16 @@ header {
 
 .our-principles{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principle{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+    width: 270px;
 }
 
 .principles-title{
@@ -141,20 +171,17 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-}
-
-.principle{
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--grey-color);
+    text-align: center;
 }
 
 .what-we-do{
+    text-align: center;
 }
 
 .imges-what-we-do{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .img-what-we-do{
@@ -165,10 +192,14 @@ header {
     width: 270px;
 }
 
-.our-team{}
+.our-team{
+    text-align: center;
+}
 
 .team {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .team-participents{
@@ -194,7 +225,10 @@ header {
 /* END OF MAIN */
 /* FOOTER */
 footer{
-    background: #2F303A;    
+    background: #2F303A;
+    min-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer-logo{
