@@ -15,18 +15,27 @@
     /* OTHERS */
 
 }
-
+*{
+    outline: solid red;
+}
 .main-index {
     font-family: var(--main-font);
     color: var(--black-color);
+    width: 1200px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p{
+    margin: 0;
+}
+
 ul{
     padding-left: 0px;
+    margin: 0;
 }
 
 .section-title {
@@ -37,21 +46,23 @@ ul{
     letter-spacing: 0.03em;
 }
 
-.section-padding {
+.section {
+    padding: 94px 15px;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* HEADER */
 header {
     border-bottom: 1px;
     border-color: rgba(236, 236, 236, 1);
-}
-
-.container{
-    width: 1200px;
-    padding: 94px 15px;
     display: flex;
-    text-align: center;
     margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
 }
 
 .logo{
@@ -75,7 +86,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    max-width: 294px;
+    width: 294px;
 }
 
 .header-link{
@@ -86,6 +97,18 @@ header {
     text-decoration: none;
     cursor: pointer;
     color: var(--black-color);
+}
+
+.contacts-header{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 331px;
+    width: 307px;
+}
+
+.contacts-header a{
+    padding: 0;
 }
 
 .contact {
@@ -111,15 +134,9 @@ header {
     color: var(--blue-color);
 }
 
-.contacts-header{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* END OF HEADER */
 /* MAIN */
-.first-part{
+.hero{
     background-color: #2F303A;
     text-align: center;
     padding-top: 200px;
@@ -156,6 +173,10 @@ header {
     justify-content: space-between;
 }
 
+.our-principles p {
+    margin-top: 10px;
+}
+
 .principle{
     font-size: 14px;
     line-height: 1.7;
@@ -176,6 +197,7 @@ header {
 
 .what-we-do{
     text-align: center;
+    padding-top: 0px;
 }
 
 .imges-what-we-do{
