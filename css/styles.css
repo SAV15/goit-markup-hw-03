@@ -50,14 +50,14 @@ ul{
 }
 
 .section {
-    padding: 94px 15px;
-    width: 1200px;
+    padding: 94px 0px;
     margin: 0 auto;
 }
 
 .container{
     margin: 0 auto;
     width: 1200px;
+    padding: 0 15px;
 }
 
 /* HEADER */
@@ -95,7 +95,6 @@ header {
     list-style-type: none;
     display: flex;
     gap: 50px;
-    /* margin-right: 331px; */
 }
 
 .header-link{
@@ -233,12 +232,10 @@ header {
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
 }
 
-.photo-of-the-participant{
-    width: 270px;
-    margin-bottom: 30px;
+.about-participant{
+    padding: 30px;
 }
 
 .name-of-participant{
@@ -277,10 +274,6 @@ footer{
     margin-bottom: 20px;
 }
 
-address{
-    gap: 9px;
-}
-
 .contact-footer{
     display: inline-block;
     font-weight: 400;
@@ -289,7 +282,7 @@ address{
     font-style: normal;
 }
 
-.contact-footer:nth-last-child(1){
+.li-contact-footer:nth-last-child(2){
     margin-bottom: 9px;
 }
 
@@ -309,13 +302,11 @@ address{
 .filters{
     list-style-type: none;
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    width: 611px;
-    margin-bottom: 50px;
+    align-items: center;
+    margin: 0 279px 34px 280px;
 }
 
-.filter{
+.button-filter{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -328,14 +319,17 @@ address{
     border-radius: 4px;
     cursor: pointer;
 }
+.filter:not(:last-child){
+    margin-right: 8px;
+}
 
-.filter:hover,
-.filter:focus{
+.button-filter:hover,
+.button-filter:focus{
     background-color: var(--blue-color);
     color: var(--white);
 }
 
-.filter:active{
+.button-filter:active{
     background-color: var(--blue-color);
     color: var(--white);
 }
