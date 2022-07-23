@@ -20,7 +20,7 @@
     outline: 1px red solid;
 } */
 
-.main-index {
+body {
     font-family: var(--main-font);
     color: var(--black-color);
     margin: 0 auto;
@@ -56,21 +56,19 @@ ul{
 }
 
 .container{
-    text-align: center;
     margin: 0 auto;
+    width: 1200px;
 }
 
 /* HEADER */
 header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
+    padding: 24px 15px 25px;
 }
 
 .container-header{
-    border-bottom: 1px;
-    border-color: rgba(236, 236, 236, 1);
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
     align-items: center;
     width: 1200px;
 }
@@ -86,6 +84,7 @@ header {
 
 .header-logo{
     color: black;
+    margin-right: 93px;
 }
 
 .blue-text{
@@ -95,8 +94,8 @@ header {
 .pages{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    width: 294px;
+    gap: 50px;
+    /* margin-right: 331px; */
 }
 
 .header-link{
@@ -112,9 +111,9 @@ header {
 .contacts-header{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    margin-left: 331px;
-    width: 307px;
+    gap: 50px;
+    margin-left: auto;
+
 }
 
 .contacts-header a{
@@ -151,7 +150,8 @@ header {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    min-width: 1200px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .businessh1{
@@ -161,12 +161,11 @@ header {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
 
 .button{
+    font-weight: 700px;
     padding: 13px 32px;
     border: 0;
     background: var(--blue-color);
@@ -203,12 +202,11 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    text-align: center;
 }
 
 .what-we-do{
     text-align: center;
-    padding-top: 0px;
+    padding: 0px 15px 94px;
 }
 
 .imges-what-we-do{
@@ -219,10 +217,6 @@ header {
 
 .img-what-we-do{
     width: 370px;
-}
-
-.photo-of-the-participant{
-    width: 270px;
 }
 
 .our-team{
@@ -238,7 +232,13 @@ header {
 .team-participents{
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;    
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.photo-of-the-participant{
+    width: 270px;
+    margin-bottom: 30px;
 }
 
 .name-of-participant{
@@ -247,6 +247,7 @@ header {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 10px;
 }
 
 .job-title{
@@ -259,27 +260,37 @@ header {
 /* FOOTER */
 footer{
     background: #2F303A;
-    min-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container-footer{
     text-align: left;
-    width: 1170px;
+    width: 1200px;
+    padding: 0 15px 0;
     margin: 0 auto;
 }
 
 .footer-logo{
     color: var(--white);
+    display: block;
+    margin-bottom: 20px;
+}
+
+address{
+    gap: 9px;
 }
 
 .contact-footer{
+    display: inline-block;
     font-weight: 400;
     text-decoration: none;
     color: var(--transparent-white);
     font-style: normal;
+}
+
+.contact-footer:nth-last-child(1){
+    margin-bottom: 9px;
 }
 
 .company-adress{
@@ -288,14 +299,10 @@ footer{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--white);    
+    color: var(--white);  
+    margin-bottom: 9px;  
 }
 /* END OF FOOTER */
-
-.main-portfolio {
-    font-family: var(--main-font);
-    color: var(--black-color);
-}
 
 /* PORTFOLIO`S MAIN */
 
