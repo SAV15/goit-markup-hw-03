@@ -63,7 +63,7 @@ ul{
 /* HEADER */
 header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
-    padding: 24px 15px 25px;
+    padding: 24px 0;
 }
 
 .container-header{
@@ -71,6 +71,7 @@ header {
     margin: 0 auto;
     align-items: center;
     width: 1200px;
+    padding: 0 15px;
 }
 
 .logo{
@@ -205,7 +206,7 @@ header {
 
 .what-we-do{
     text-align: center;
-    padding: 0px 15px 94px;
+    padding-bottom: 94px;
 }
 
 .imges-what-we-do{
@@ -220,6 +221,7 @@ header {
 
 .our-team{
     text-align: center;
+    background-color: var(--light-grey);
 }
 
 .team {
@@ -302,8 +304,8 @@ footer{
 .filters{
     list-style-type: none;
     display: flex;
-    align-items: center;
-    margin: 0 279px 34px 280px;
+    justify-content: center;
+    margin: 0 auto 50px;
 }
 
 .button-filter{
@@ -353,6 +355,8 @@ footer{
 }
 .project-title{
     padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: none;
 }
 
 .project:nth-child(3n){
@@ -374,6 +378,7 @@ footer{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .project-type{
